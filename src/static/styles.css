@@ -63,6 +63,9 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .activity-card h4 {
@@ -141,4 +144,52 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Participants list styling */
+.participants {
+  margin-top: 8px;
+}
+.participants p {
+  margin: 0 0 6px 0;
+  color: #444;
+}
+.participants-list {
+  list-style: none;
+  margin: 0;
+  padding: 4px 8px;
+  background: linear-gradient(180deg, rgba(26,35,126,0.02), transparent);
+  border-radius: 4px;
+}
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  border-bottom: 1px dashed rgba(0,0,0,0.05);
+  color: #222;
+  font-size: 14px;
+}
+.participant-item:last-child {
+  border-bottom: none;
+}
+.no-participants {
+  font-style: italic;
+  color: #666;
+  padding-left: 4px;
+}
+
+/* Delete/unregister button */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 12px;
+  padding: 4px;
+  line-height: 1;
+}
+.delete-btn:hover {
+  color: #b71c1c;
 }
